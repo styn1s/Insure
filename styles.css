@@ -29,9 +29,20 @@ nav ul li a{
 }
 
 nav ul li:last-child a{
-    border: 2px solid black;
+    border: 2px solid hsl(270, 9%, 17%);
     padding: 12px 30px;
-    color: black;
+    color: hsl(270, 9%, 17%);
+    transition: 0.3s ease-out;
+}
+
+nav ul li a:hover{
+    color: hsl(270, 9%, 17%);
+}
+
+nav ul li:last-child a:hover{
+    color: white;
+    background-color: hsl(270, 9%, 17%);
+    transition: 0.3s ease-out;
 }
 
 main{
@@ -70,6 +81,14 @@ a.button{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1em;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+a.button:hover{
+    color: hsl(256, 26%, 20%);
+    background-color: white;
+    transition: 0.3s ease-in-out;
 }
 
 #main-wrapper{
@@ -213,6 +232,10 @@ footer ul{
     padding: 0;
 }
 
+#share-wrapper img:hover{
+    filter: invert(1) brightness(0);
+}
+
 #big-line{
     width: 77.8%;
     height: 1px;
@@ -223,7 +246,7 @@ footer ul{
 #footer-info-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    padding: 0 350px 0 150px;
 }
 
 #footer-info-wrapper ul{
@@ -236,6 +259,10 @@ footer ul{
     text-transform: uppercase;
     color: hsl(270, 9%, 17%);
     font-weight: bold;
+}
+
+#footer-info-wrapper ul li a:hover{
+    text-decoration: underline;
 }
 
 #footer-info-wrapper ul li{
