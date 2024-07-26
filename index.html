@@ -13,20 +13,36 @@
       content="insurance, life insurance, affordable insurance, insurance plans"
     />
     <meta name="author" content="Styn1s" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <img src="./assets/images/logo.svg" alt="Insure logo" />
+      <div class="logo-wrapper">
+        <img src="./assets/images/logo.svg" alt="Insure logo" />
+      </div>
+
       <nav role="navigation">
         <ul>
-          <li><a href="#how-we-work" aria-label="How we work section">How we work</a></li>
+          <li>
+            <a href="#how-we-work" aria-label="How we work section"
+              >How we work</a
+            >
+          </li>
           <li><a href="#blog" aria-label="Blog section">Blog</a></li>
           <li><a href="#account" aria-label="Account section">Account</a></li>
-          <li><a href="#plans" aria-label="View plans section">View plans</a></li>
+          <li>
+            <a href="#plans" aria-label="View plans section">View plans</a>
+          </li>
         </ul>
       </nav>
+      <button id="burger-icon"></button>
     </header>
+
+    <img
+      id="mobile-family-pic"
+      src="./assets/images/image-intro-mobile.jpg"
+      alt="Mobile family picture"
+    />
 
     <main>
       <img
@@ -34,10 +50,10 @@
         src="./assets/images/bg-pattern-intro-right-desktop.svg"
         alt="Background pattern right"
       />
-      
+
       <div id="main-wrapper">
         <div id="main-line"></div>
-        <h1>Humanizing<br>your insurance.</h1>
+        <h1>Humanizing<br />your insurance.</h1>
         <p>
           Get your life insurance coverage easier and faster. We blend our
           expertise and technology to help you find the plan that's right for
@@ -45,6 +61,17 @@
         </p>
         <a href="#plans" class="button" role="button">View plans</a>
       </div>
+
+      <img
+        id="bg-pattern-left-mobile"
+        src="./assets/images/bg-pattern-intro-left-mobile.svg"
+        alt="Background pattern left mobile"
+      />
+      <img
+        id="bg-pattern-right-mobile"
+        src="./assets/images/bg-pattern-intro-right-mobile.svg"
+        alt="Background pattern right mobile"
+      />
     </main>
 
     <section id="advantages">
@@ -53,7 +80,11 @@
         src="./assets/images/bg-pattern-intro-left-desktop.svg"
         alt="Background pattern left"
       />
-      <img id="family-pic" src="./assets/images/image-intro-desktop.jpg" alt="A happy family representing life insurance benefits" />
+      <img
+        id="family-pic"
+        src="./assets/images/image-intro-desktop.jpg"
+        alt="A happy family representing life insurance benefits"
+      />
 
       <div id="advantages-wrapper">
         <div id="advantages-line"></div>
@@ -97,24 +128,30 @@
 
       <div id="how-we-work-wrapper">
         <div id="how-we-work">
-          <h2>Find out more<br>about how we work</h2>
-          <a href="#how-we-work-details" id="how-we-work-btn" class="button">How we work</a>
+          <h2>Find out more<br />about how we work</h2>
+          <a href="#how-we-work-details" id="how-we-work-btn" class="button"
+            >How we work</a
+          >
           <img
             id="bg-pattern-how-we-work"
             src="./assets/images/bg-pattern-how-we-work-desktop.svg"
             alt="Background pattern how we work"
           />
+          <img
+            id="bg-pattern-how-we-work-mobile"
+            src="./assets/images/bg-pattern-how-we-work-mobile.svg"
+            alt="Background pattern how we work mobile"
+          />
         </div>
       </div>
-      
     </section>
 
     <footer>
       <div id="share-wrapper">
-        <div id="logo-wrapper">
+        <div class="logo-wrapper">
           <img src="./assets/images/logo.svg" alt="Insure logo" />
         </div>
-        
+
         <ul>
           <li>
             <a href="https://www.facebook.com" aria-label="Facebook"
@@ -147,30 +184,54 @@
 
       <div id="footer-info-wrapper">
         <ul>
-          <li><a href="#company" aria-label="Our company section">Our company</a></li>
-          <li><a href="#how-we-work" aria-label="How we work section">How we work</a></li>
-          <li><a href="#why-insure" aria-label="Why Insure section">Why Insure?</a></li>
-          <li><a id="plans" href="#plans" aria-label="View plans section">View plans</a></li>
+          <li>
+            <a href="#company" aria-label="Our company section">Our company</a>
+          </li>
+          <li>
+            <a href="#how-we-work" aria-label="How we work section"
+              >How we work</a
+            >
+          </li>
+          <li>
+            <a href="#why-insure" aria-label="Why Insure section"
+              >Why Insure?</a
+            >
+          </li>
+          <li>
+            <a id="plans" href="#plans" aria-label="View plans section"
+              >View plans</a
+            >
+          </li>
           <li><a href="#reviews" aria-label="Reviews section">Reviews</a></li>
         </ul>
         <ul>
           <li><a href="#help" aria-label="Help me section">Help me</a></li>
           <li><a href="#faq" aria-label="FAQ section">FAQ</a></li>
-          <li><a href="#terms" aria-label="Terms of use section">Terms of use</a></li>
-          <li><a href="#privacy" aria-label="Privacy policy section">Privacy policy</a></li>
+          <li>
+            <a href="#terms" aria-label="Terms of use section">Terms of use</a>
+          </li>
+          <li>
+            <a href="#privacy" aria-label="Privacy policy section"
+              >Privacy policy</a
+            >
+          </li>
           <li><a href="#cookies" aria-label="Cookies section">Cookies</a></li>
         </ul>
         <ul>
           <li><a href="#contact" aria-label="Contact section">Contact</a></li>
           <li><a href="#sales" aria-label="Sales section">Sales</a></li>
           <li><a href="#support" aria-label="Support section">Support</a></li>
-          <li><a href="#live-chat" aria-label="Live chat section">Live chat</a></li>
+          <li>
+            <a href="#live-chat" aria-label="Live chat section">Live chat</a>
+          </li>
         </ul>
         <ul>
           <li><a href="#others" aria-label="Others section">Others</a></li>
           <li><a href="#careers" aria-label="Careers section">Careers</a></li>
           <li><a href="#press" aria-label="Press section">Press</a></li>
-          <li><a href="#licenses" aria-label="Licenses section">Licenses</a></li>
+          <li>
+            <a href="#licenses" aria-label="Licenses section">Licenses</a>
+          </li>
         </ul>
       </div>
 
@@ -179,6 +240,13 @@
         src="./assets/images/bg-pattern-footer-desktop.svg"
         alt="Background pattern footer"
       />
+
+      <img
+        id="bg-pattern-footer-mobile"
+        src="./assets/images/bg-pattern-footer-mobile.svg"
+        alt="Background pattern footer mobile"
+      />
+
     </footer>
   </body>
 </html>

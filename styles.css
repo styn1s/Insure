@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 html, body{
     margin: 0;
     height: 100%;
     font-family: "Karla";
+    overflow-x: hidden;
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 40px 150px;
+}
+
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    width: fit-content;
 }
 
 nav{
@@ -45,11 +56,29 @@ nav ul li:last-child a:hover{
     transition: 0.3s ease-out;
 }
 
+#burger-icon{
+    display: none;
+    background-image: url("./assets/images/icon-hamburger.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
 main{
     position: relative;
     height: 600px;
     background-color: hsl(256, 26%, 20%);
     overflow: hidden;
+}
+
+#mobile-family-pic,
+#bg-pattern-left-mobile,
+#bg-pattern-right-mobile,
+#bg-pattern-how-we-work-mobile,
+#bg-pattern-footer-mobile{
+    display: none;
 }
 
 #main-line{
@@ -103,7 +132,6 @@ a.button:hover{
 }
 
 #bg-pattern-right{
-    
     top: -80px;
     right: 0;
     z-index: 2;
@@ -281,4 +309,176 @@ footer ul{
     position: absolute;
     top: 0;
     z-index: 1;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding: 30px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #family-pic,
+    #bg-pattern-right,
+    #bg-pattern-left,
+    #main-line,
+    #bg-pattern-how-we-work,
+    #bg-pattern-footer{
+        display: none;
+    }
+
+    #burger-icon,
+    #mobile-family-pic,
+    #bg-pattern-left-mobile,
+    #bg-pattern-right-mobile,
+    #bg-pattern-how-we-work-mobile,
+    #bg-pattern-footer-mobile{
+        display: block;
+    }
+
+    #bg-pattern-left-mobile,
+    #bg-pattern-right-mobile,
+    #bg-pattern-how-we-work-mobile,
+    #bg-pattern-footer-mobile{
+        position: absolute;
+    }
+
+    #mobile-family-pic{
+        width: 100%;
+    }
+
+    #bg-pattern-left-mobile{
+        width: 180px;
+        left: 0;
+    }
+
+    #bg-pattern-right-mobile{
+        top: 447px;
+        right: 0;
+    }
+
+    #main-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 2;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    main h1{
+        width: 150%;
+        font-size: 2.7em;
+    }
+
+    main p{
+        width: 80%;
+        line-height: 1.6;
+    }
+
+    #advantages{
+        height: auto;
+    }
+
+    #advantages-line{
+        width: 50%;
+    }
+
+    #advantages-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: fit-content;
+        padding: 150px 0 0;
+    }
+
+    #advantages-wrapper h1{
+        font-size: 2.8em;
+        margin-top: 0;
+    }
+
+    #advantages-wrapper p:last-child{
+        margin-bottom: 0;
+    }
+
+    #advantages-wrapper ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #advantages-wrapper ul li{
+        width: 80%;
+    }
+
+    #how-we-work-wrapper{
+        width: 90%;
+        height: 100%;
+        margin: 130px auto;
+        padding: 0;
+    }
+
+    #how-we-work{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        overflow: hidden;
+        padding: 70px 0;
+    }
+
+    #how-we-work h2{
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 2.5em;
+        z-index: 2;
+    }
+
+    #bg-pattern-how-we-work-mobile{
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    footer{
+        overflow: hidden;
+    }
+
+    #bg-pattern-footer-mobile{
+        top: 0;
+        left: 0;
+    }
+
+    #share-wrapper, #footer-info-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #big-line{
+        margin: 50px auto;
+    }
+
+    #footer-info-wrapper ul{
+        text-align: center;
+    }
+
+    #footer-info-wrapper{
+        padding: 0;
+    }
 }
