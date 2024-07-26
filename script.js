@@ -36,6 +36,5 @@ function updateView(){
 document.addEventListener("DOMContentLoaded", function(){
     burgerIcon.addEventListener("click", showMobileMenu);
     exitIcon.addEventListener("click", hideMobileMenu);
+    window.addEventListener("resize", updateView);
 });
-
-window.addEventListener("resize", updateView);
