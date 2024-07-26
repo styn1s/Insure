@@ -12,4 +12,4 @@ Just download the files in this perository, and open index.html (**don't forget 
 
 ## Live site URL
 
-In progress
+[Open it](https://styn1s.github.io/Insure/)
