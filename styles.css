@@ -493,7 +493,7 @@ footer ul{
     }
 
     #bg-pattern-right-mobile{
-        top: 447px;
+        top: 350px;
         right: 0;
     }
 
@@ -524,6 +524,11 @@ footer ul{
         width: 80%;
         font-size: 16px;
         line-height: 1.6;
+    }
+
+    a.button{
+        position: relative;
+        z-index: 2;
     }
 
     a.button,
