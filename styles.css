@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primary-color: hsl(256, 26%, 20%);
+    --secondary-color: hsl(0, 0%, 98%);
+    --text-color: hsl(270, 9%, 17%);
+    --light-color: white;
+    --primary-font: 'Karla', sans-serif;
+    --secondary-font: 'DM Serif Display', serif;
+}
+
 html, body{
     margin: 0;
     height: 100%;
-    font-family: "Karla";
-    /*overflow-x: hidden;*/
+    font-family: var(--primary-font);
 }
 
 header{
@@ -40,33 +49,32 @@ nav ul li a{
 }
 
 nav ul li:last-child a{
-    border: 2px solid hsl(270, 9%, 17%);
+    border: 2px solid var(--text-color);
     padding: 12px 30px;
-    color: hsl(270, 9%, 17%);
+    color: var(--text-color);
     transition: 0.3s ease-out;
 }
 
 nav ul li a:hover{
-    color: hsl(270, 9%, 17%);
+    color: var(--text-color);
 }
 
 nav ul li:last-child a:hover{
-    color: white;
-    background-color: hsl(270, 9%, 17%);
+    color: var(--light-color);
+    background-color: var(--text-color);
     transition: 0.3s ease-out;
 }
 
 #burger-icon{
     background-image: url("./assets/images/icon-hamburger.svg");
-    background-size: cover;
-    width: 30px;
-    height: 30px;
-    border: none;
-    cursor: pointer;
 }
 
 #exit-icon{
     background-image: url("./assets/images/icon-close.svg");
+}
+
+#burger-icon,
+#exit-icon{
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -79,7 +87,7 @@ nav ul li:last-child a:hover{
     top: 90px;
     left: 0;
     padding: 30px 0;
-    background-color: hsl(270, 9%, 17%);
+    background-color: var(--text-color);
     box-sizing: border-box;
     width: 100%;
     height: 87%;
@@ -103,13 +111,13 @@ nav ul li:last-child a:hover{
 
 #mobile-menu ul li a{
     text-decoration: none;
-    color: hsl(0, 0%, 98%);
+    color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 #mobile-menu ul li:last-child a{
-    border: 2px solid white;
+    border: 2px solid var(--light-color);
     padding: 10px 70px;
 }
 
@@ -120,11 +128,10 @@ nav ul li:last-child a:hover{
     width: 100%;
 }
 
-
 main{
     position: relative;
     height: 600px;
-    background-color: hsl(256, 26%, 20%);
+    background-color: var(--primary-color);
     overflow: hidden;
 }
 
@@ -149,10 +156,8 @@ main{
 main h1{
     position: relative;
     margin: 0;
-    font-family: "DM Serif Display";
-    font-size: 4em;
-    font-weight: 400;
-    color: white;
+    font: 400 4em var(--secondary-font);
+    color: var(--light-color);
     line-height: 1;
     z-index: 1;
 }
@@ -164,9 +169,9 @@ main p{
 }
 
 a.button{
-    border: 2px solid white;
+    border: 2px solid var(--light-color);
     padding: 12px 30px;
-    color: white;
+    color: var(--light-color);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1em;
@@ -175,14 +180,14 @@ a.button{
 }
 
 a.button:hover{
-    color: hsl(256, 26%, 20%);
-    background-color: white;
+    color: var(--primary-color);
+    background-color: var(--light-color);
     transition: 0.3s ease-in-out;
 }
 
 #main-wrapper{
-    padding: 100px 150px;
     width: 40%;
+    padding: 100px 150px;
 }
 
 #bg-pattern-right,
@@ -237,7 +242,7 @@ a.button:hover{
 }
 
 #advantages-wrapper h1, h3{
-    font-family: "DM Serif Display";
+    font-family: var(--secondary-font);
     font-weight: 400;
 }
 
@@ -265,16 +270,14 @@ a.button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(256, 26%, 20%);
+    background-color: var(--primary-color);
     height: 100%;
     padding: 0 100px;
 }
 
 #how-we-work h2{
-    font-family: "DM Serif Display";
-    color: white;
-    font-weight: 400;
-    font-size: 3em;
+    font: 400 3em var(--secondary-font);
+    color: var(--light-color);
     line-height: 1;
 }
 
@@ -283,16 +286,16 @@ a.button:hover{
 }
 
 #bg-pattern-how-we-work{
-    width: 435px;
     position: absolute;
     top: 0;
     right: 0;
+    width: 435px;
     z-index: 1;
 }
 
 footer{
     position: relative;
-    background-color: hsl(0, 0%, 98%);
+    background-color: var(--secondary-color);
     padding-bottom: 65px;
 }
 
@@ -328,7 +331,7 @@ footer ul{
     width: 77.8%;
     height: 1px;
     background-color: lightgray;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 50px;
 }
 
 #footer-info-wrapper{
@@ -345,7 +348,7 @@ footer ul{
 #footer-info-wrapper ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: hsl(270, 9%, 17%);
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -357,12 +360,12 @@ footer ul{
     line-height: 2;
 }
 
-#footer-info-wrapper ul li:first-child a{
-    color: hsl(273, 4%, 51%);
-}
-
 #footer-info-wrapper ul li:first-child{
     margin-bottom: 20px;
+}
+
+#footer-info-wrapper ul li:first-child a{
+    color: hsl(273, 4%, 51%);
 }
 
 #bg-pattern-footer{
@@ -395,8 +398,8 @@ footer ul{
     }
 
     main p{
-        font-size: 14px;
         width: 80%;
+        font-size: 14px;
     }
 
     a.button{
@@ -454,10 +457,7 @@ footer ul{
         padding: 30px;
     }
 
-    nav{
-        display: none;
-    }
-
+    nav,
     #family-pic,
     #bg-pattern-right,
     #bg-pattern-left,
@@ -502,8 +502,8 @@ footer ul{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: fit-content;
         text-align: center;
+        width: fit-content;
         padding: 100px 0;
         z-index: 2;
     }
@@ -593,8 +593,7 @@ footer ul{
     }
 
     #how-we-work h2{
-        margin-top: 0;
-        margin-bottom: 40px;
+        margin: 0 0 40px;
         font-size: 2.5em;
         z-index: 2;
     }
@@ -625,11 +624,11 @@ footer ul{
         margin: 50px auto;
     }
 
-    #footer-info-wrapper ul{
-        text-align: center;
-    }
-
     #footer-info-wrapper{
         padding: 0;
+    }
+
+    #footer-info-wrapper ul{
+        text-align: center;
     }
 }
