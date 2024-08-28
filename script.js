@@ -1,22 +1,22 @@
-var burgerIcon = document.getElementById("burger-icon");
-var exitIcon = document.getElementById("exit-icon");
-var mobileMenu = document.getElementById("mobile-menu");
+const burgerBtn = document.querySelector(".header__burger-btn");
+const exitBtn = document.querySelector(".header__exit-btn");
+const mobileMenu = document.querySelector(".header__mobile-menu");
 
 function showMobileMenu(){
-    burgerIcon.style.display = "none";
-    exitIcon.style.display = "block";
+    burgerBtn.style.display = "none";
+    exitBtn.style.display = "block";
     mobileMenu.style.display = "block";
 }
 
 function hideMobileMenu(){
-    burgerIcon.style.display = "block";
-    exitIcon.style.display = "none";
+    burgerBtn.style.display = "block";
+    exitBtn.style.display = "none";
     mobileMenu.style.display = "none";
 }
 
 function hideAll(){
-    burgerIcon.style.display = "none";
-    exitIcon.style.display = "none";
+    burgerBtn.style.display = "none";
+    exitBtn.style.display = "none";
     mobileMenu.style.display = "none";
 }
 
@@ -26,15 +26,16 @@ function updateView(){
         hideAll();
     }
     else{
-        if (exitIcon.style.display === "none"){
-            burgerIcon.style.display = "block";
+        if (exitBtn.style.display === "none"){
+            burgerBtn.style.display = "block";
         }
     }
     
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    burgerIcon.addEventListener("click", showMobileMenu);
-    exitIcon.addEventListener("click", hideMobileMenu);
+    burgerBtn.addEventListener("click", showMobileMenu);
+    exitBtn.addEventListener("click", hideMobileMenu);
     window.addEventListener("resize", updateView);
+    updateView();
 });

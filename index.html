@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insure</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
       content="Get your life insurance coverage easier and faster with Insure. We blend our expertise and technology to help you find the plan that's right for you."
@@ -15,53 +15,67 @@
     <meta name="author" content="Styn1s" />
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
+    <title>Insure</title>
   </head>
   <body>
-    <header>
-      <div class="logo-wrapper">
+    <header class="header">
+      <div class="header__logo-wrapper">
         <img src="./assets/images/logo.svg" alt="Insure logo" loading="lazy" />
       </div>
 
-      <nav role="navigation">
-        <ul>
-          <li>
+      <nav class="header__nav" role="navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
             <a href="#how-we-work" aria-label="How we work section"
               >How we work</a
             >
           </li>
-          <li><a href="#blog" aria-label="Blog section">Blog</a></li>
-          <li><a href="#account" aria-label="Account section">Account</a></li>
-          <li>
+          <li class="header__nav-item">
+            <a href="#blog" aria-label="Blog section">Blog</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#account" aria-label="Account section">Account</a>
+          </li>
+          <li class="header__nav-item">
             <a href="#plans" aria-label="View plans section">View plans</a>
           </li>
         </ul>
+
+        <button
+          class="header__burger-btn"
+          aria-label="Burger menu button"
+        ></button>
+        <button class="header__exit-btn" aria-label="Exit menu button"></button>
+
+        <div class="header__mobile-menu" role="navigation">
+          <ul class="header__mobile-menu-list">
+            <li class="header__mobile-menu-item">
+              <a href="#how-we-work" aria-label="How we work section"
+                >How we work</a
+              >
+            </li>
+            <li class="header__mobile-menu-item">
+              <a href="#blog" aria-label="Blog section">Blog</a>
+            </li>
+            <li class="header__mobile-menu-item">
+              <a href="#account" aria-label="Account section">Account</a>
+            </li>
+            <li class="header__mobile-menu-item">
+              <a href="#plans" aria-label="View plans section">View plans</a>
+            </li>
+          </ul>
+          <img
+            class="header__mobile-menu-bg-pattern"
+            src="./assets/images/bg-pattern-mobile-nav.svg"
+            alt="Background pattern mobile nav"
+            loading="lazy"
+          />
+        </div>
       </nav>
-      <button id="burger-icon" aria-label="Burger menu section"></button>
-      <button id="exit-icon" aria-label="Exit menu section"></button>
-      <div id="mobile-menu">
-        <ul>
-          <li>
-            <a href="#how-we-work" aria-label="How we work section"
-              >How we work</a
-            >
-          </li>
-          <li><a href="#blog" aria-label="Blog section">Blog</a></li>
-          <li><a href="#account" aria-label="Account section">Account</a></li>
-          <li>
-            <a href="#plans" aria-label="View plans section">View plans</a>
-          </li>
-        </ul>
-        <img
-          id="bg-pattern-mobile-nav"
-          src="./assets/images/bg-pattern-mobile-nav.svg"
-          alt="Background pattern mobile nav"
-          loading="lazy"
-        />
-      </div>
     </header>
 
     <img
-      id="mobile-family-pic"
+      class="mobile-family-pic"
       src="./assets/images/image-intro-mobile.jpg"
       alt="Mobile family picture"
       loading="lazy"
