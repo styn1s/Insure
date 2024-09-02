@@ -48,8 +48,15 @@
         <button
           class="header__burger-btn"
           aria-label="Burger menu button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         ></button>
-        <button class="header__exit-btn" aria-label="Exit menu button"></button>
+        <button
+          class="header__exit-btn"
+          aria-label="Exit menu button"
+          aria-expanded="true"
+          aria-controls="mobile-menu"
+        ></button>
 
         <div class="header__mobile-menu" role="navigation">
           <ul class="header__mobile-menu-list">
@@ -170,7 +177,7 @@
         </ul>
       </div>
 
-      <div class="advantages__how-we-work-wrapper">
+      <div class="how-we-work">
         <div class="how-we-work__content">
           <h2 class="how-we-work__title">
             Find out more<br />about how we work
