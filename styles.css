@@ -328,7 +328,7 @@ body {
 }
 
 .footer__line {
-  width: 77.8%;
+  width: 79%;
   height: 0.0625rem;
   margin: 0 auto 3.125rem;
   background-color: var(--lightgray-color);
@@ -361,6 +361,24 @@ body {
 
 .footer__bg-pattern {
   top: 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .main__description {
+    width: 60%;
+  }
+
+  .advantages__family-pic {
+    width: 27%;
+  }
+
+  .advantages__item-description {
+    width: 50%;
+  }
+
+  .footer__line {
+    width: 88%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -550,6 +568,10 @@ body {
   .advantages__title {
     margin-top: 0;
     font-size: 2.8rem;
+  }
+
+  .advantages__list {
+    gap: 4rem;
   }
 
   .advantages__item {

@@ -8,13 +8,19 @@ function toggleMobileMenu(show) {
   mobileMenu.style.display = show ? "block" : "none";
 }
 
+function hideAll() {
+  burgerBtn.style.display = "none";
+  exitBtn.style.display = "none";
+  mobileMenu.style.display = "none";
+}
+
 function updateView() {
   var windowWidth = window.innerWidth;
   if (windowWidth > 768) {
     hideAll();
     returnImage();
   } else {
-    toggleMobileMenu(exitBtn.style.display === "none");
+    toggleMobileMenu(mobileMenu.style.display === "block");
     replaceImage();
   }
 }
