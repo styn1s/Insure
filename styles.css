@@ -20,7 +20,7 @@ body {
 }
 
 .header__mobile-menu-list,
-.main,
+.hero,
 .advantages,
 .how-we-work__content,
 .footer,
@@ -31,7 +31,7 @@ body {
 
 .header__mobile-menu,
 .header__mobile-menu-bg-pattern,
-.main__bg-pattern-right,
+.hero__bg-pattern-right,
 .advantages__bg-pattern-left,
 .advantages__family-pic,
 .how-we-work__bg-pattern,
@@ -42,8 +42,8 @@ body {
 .header__burger-btn,
 .header__exit-btn,
 .header__mobile-menu,
-.main__bg-pattern-left-mobile,
-.main__bg-pattern-right-mobile {
+.hero__bg-pattern-left-mobile,
+.hero__bg-pattern-right-mobile {
   display: none;
 }
 
@@ -87,7 +87,7 @@ body {
 
 .header__mobile-menu,
 .header__mobile-menu-list,
-.main__bg-pattern-right,
+.hero__bg-pattern-right,
 .button,
 .footer__social-media,
 .footer__line,
@@ -181,37 +181,37 @@ body {
   width: 100%;
 }
 
-.main {
+.hero {
   height: 37.5rem;
   background-color: var(--primary-color);
   overflow: hidden;
 }
 
-.main__bg-pattern-right {
+.hero__bg-pattern-right {
   top: -5rem;
   right: 0;
 }
 
-.main__content {
+.hero__content {
   width: 40%;
   padding: 6.25rem 9.375rem;
 }
 
-.main__line {
+.hero__line {
   width: 25%;
   height: 0.0625rem;
   margin-bottom: 3.125rem;
   background-color: var(--lightgray-color);
 }
 
-.main__title {
+.hero__title {
   margin: 0;
   font: 400 4rem var(--secondary-font);
   line-height: 1;
   color: var(--light-color);
 }
 
-.main__description {
+.hero__description {
   margin: 1.875rem 0 3.125rem 0;
   line-height: 1.4rem;
   color: var(--lightgray-color);
@@ -364,7 +364,7 @@ body {
 }
 
 @media screen and (min-width: 2000px) {
-  .main__description {
+  .hero__description {
     width: 60%;
   }
 
@@ -390,23 +390,23 @@ body {
     font-size: 0.7rem;
   }
 
-  .main {
+  .hero {
     height: 31.25rem;
   }
 
-  .main__bg-pattern-right {
+  .hero__bg-pattern-right {
     width: 20rem;
   }
 
-  .main__content {
+  .hero__content {
     padding: 4.375rem 5.625rem;
   }
 
-  .main__title {
+  .hero__title {
     font-size: 3rem;
   }
 
-  .main__description {
+  .hero__description {
     width: 80%;
     font-size: 0.875rem;
   }
@@ -459,27 +459,27 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main__bg-pattern-left-mobile,
-  .main__bg-pattern-right-mobile {
+  .hero__bg-pattern-left-mobile,
+  .hero__bg-pattern-right-mobile {
     position: absolute;
   }
 
   .header__nav-list,
-  .main__bg-pattern-right,
-  .main__line,
+  .hero__bg-pattern-right,
+  .hero__line,
   .advantages__bg-pattern-left {
     display: none;
   }
 
   .header__burger-btn,
-  .main__bg-pattern-left-mobile,
-  .main__bg-pattern-right-mobile,
+  .hero__bg-pattern-left-mobile,
+  .hero__bg-pattern-right-mobile,
   .advantages__family-pic {
     display: block;
   }
 
-  .main,
-  .main__content,
+  .hero,
+  .hero__content,
   .advantages__content,
   .how-we-work__content,
   .advantages__list,
@@ -502,14 +502,14 @@ body {
     font-size: 1rem;
   }
 
-  .main__content,
+  .hero__content,
   .advantages__content,
   .how-we-work__content,
   .footer__list {
     text-align: center;
   }
 
-  .main__content,
+  .hero__content,
   .how-we-work__title {
     z-index: 1;
   }
@@ -518,32 +518,32 @@ body {
     padding: 1.875rem;
   }
 
-  .main__bg-pattern-left-mobile {
+  .hero__bg-pattern-left-mobile {
     top: 0;
     left: 0;
     width: 11.25rem;
   }
 
-  .main__bg-pattern-right-mobile {
+  .hero__bg-pattern-right-mobile {
     top: 21.875rem;
     right: 0;
   }
 
-  .main {
+  .hero {
     overflow: visible;
   }
 
-  .main__content {
+  .hero__content {
     width: auto;
     padding: 6.25rem 0;
   }
 
-  .main__title {
+  .hero__title {
     width: 100%;
     font-size: 2.7rem;
   }
 
-  .main__description {
+  .hero__description {
     width: 80%;
     font-size: 1rem;
     line-height: 1.6rem;

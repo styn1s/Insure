@@ -27,7 +27,7 @@
         <img src="./images/logo.svg" alt="Insure logo" loading="lazy" />
       </div>
 
-      <nav class="header__nav" role="navigation">
+      <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a href="#how-we-work" aria-label="How we work section"
@@ -49,13 +49,13 @@
           class="header__burger-btn"
           aria-label="Burger menu button"
           aria-expanded="false"
-          aria-controls="mobile-menu"
+          aria-controls="header__mobile-menu"
         ></button>
         <button
           class="header__exit-btn"
           aria-label="Exit menu button"
           aria-expanded="true"
-          aria-controls="mobile-menu"
+          aria-controls="header__mobile-menu"
         ></button>
 
         <div class="header__mobile-menu" role="navigation">
@@ -85,124 +85,122 @@
       </nav>
     </header>
 
-    <main role="main" class="main">
-      <img
-        class="main__bg-pattern-right"
-        src="./images/bg-pattern-intro-right-desktop.svg"
-        alt="Background pattern right"
-        loading="lazy"
-      />
+    <main class="main">
+      <section class="hero">
+        <img
+          class="hero__bg-pattern-right"
+          src="./images/bg-pattern-intro-right-desktop.svg"
+          alt="Background pattern right"
+          loading="lazy"
+        />
 
-      <div class="main__content">
-        <div class="main__line"></div>
-        <h1 class="main__title">Humanizing<br />your insurance.</h1>
-        <p class="main__description">
-          Get your life insurance coverage easier and faster. We blend our
-          expertise and technology to help you find the plan that's right for
-          you. Ensure you and your loved ones are protected.
-        </p>
-        <a href="#plans" class="button button--white" role="button"
-          >View plans</a
-        >
-      </div>
-
-      <img
-        class="main__bg-pattern-left-mobile"
-        src="./images/bg-pattern-intro-left-mobile.svg"
-        alt="Background pattern left mobile"
-        loading="lazy"
-      />
-      <img
-        class="main__bg-pattern-right-mobile"
-        src="./images/bg-pattern-intro-right-mobile.svg"
-        alt="Background pattern right mobile"
-        loading="lazy"
-      />
-    </main>
-
-    <section class="advantages">
-      <img
-        class="advantages__bg-pattern-left"
-        src="./images/bg-pattern-intro-left-desktop.svg"
-        alt="Background pattern left"
-        loading="lazy"
-      />
-      <img
-        class="advantages__family-pic"
-        src="./images/image-intro-desktop.jpg"
-        alt="A happy family representing life insurance benefits"
-        loading="lazy"
-      />
-
-      <div class="advantages__content">
-        <div class="advantages__line"></div>
-        <h2 class="advantages__title">We're different</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <img
-              src="./images/icon-snappy-process.svg"
-              alt="Snappy Process icon"
-              loading="lazy"
-            />
-            <h3 class="advantages__item-title">Snappy Process</h3>
-            <p class="advantages__item-description">
-              Our application process can be completed in minutes, not hours.
-              Don't get stuck filling in tedious forms.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <img
-              src="./images/icon-affordable-prices.svg"
-              alt="Affordable Prices icon"
-              loading="lazy"
-            />
-            <h3 class="advantages__item-title">Affordable Prices</h3>
-            <p class="advantages__item-description">
-              We don't want you worrying about high monthly costs. Our prices
-              may be low, but we still offer the best coverage possible.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <img
-              src="./images/icon-people-first.svg"
-              alt="People First icon"
-              loading="lazy"
-            />
-            <h3 class="advantages__item-title">People First</h3>
-            <p class="advantages__item-description">
-              Our plans aren't full of conditions and clauses to prevent
-              payouts. We make sure you're covered when you need it.
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="how-we-work">
-        <div class="how-we-work__content">
-          <h3 class="how-we-work__title">
-            Find out more<br />about how we work
-          </h3>
-          <a href="#how-we-work-details" class="button button--white"
-            >How we work</a
+        <div class="hero__content">
+          <div class="hero__line"></div>
+          <h1 class="hero__title">Humanizing<br />your insurance.</h1>
+          <p class="hero__description">
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that's right for
+            you. Ensure you and your loved ones are protected.
+          </p>
+          <a href="#plans" class="button button--white" role="button"
+            >View plans</a
           >
-          <img
-            class="how-we-work__bg-pattern"
-            src="./images/bg-pattern-how-we-work-desktop.svg"
-            alt="Background pattern how we work"
-            loading="lazy"
-          />
         </div>
-      </div>
-    </section>
+
+        <img
+          class="hero__bg-pattern-left-mobile"
+          src="./images/bg-pattern-intro-left-mobile.svg"
+          alt="Background pattern left mobile"
+          loading="lazy"
+        />
+        <img
+          class="hero__bg-pattern-right-mobile"
+          src="./images/bg-pattern-intro-right-mobile.svg"
+          alt="Background pattern right mobile"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="advantages">
+        <img
+          class="advantages__bg-pattern-left"
+          src="./images/bg-pattern-intro-left-desktop.svg"
+          alt="Background pattern left"
+          loading="lazy"
+        />
+        <img
+          class="advantages__family-pic"
+          src="./images/image-intro-desktop.jpg"
+          alt="A happy family representing life insurance benefits"
+          loading="lazy"
+        />
+  
+        <div class="advantages__content">
+          <div class="advantages__line"></div>
+          <h2 class="advantages__title">We're different</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <img
+                src="./images/icon-snappy-process.svg"
+                alt="Snappy Process icon"
+                loading="lazy"
+              />
+              <h3 class="advantages__item-title">Snappy Process</h3>
+              <p class="advantages__item-description">
+                Our application process can be completed in minutes, not hours.
+                Don't get stuck filling in tedious forms.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img
+                src="./images/icon-affordable-prices.svg"
+                alt="Affordable Prices icon"
+                loading="lazy"
+              />
+              <h3 class="advantages__item-title">Affordable Prices</h3>
+              <p class="advantages__item-description">
+                We don't want you worrying about high monthly costs. Our prices
+                may be low, but we still offer the best coverage possible.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img
+                src="./images/icon-people-first.svg"
+                alt="People First icon"
+                loading="lazy"
+              />
+              <h3 class="advantages__item-title">People First</h3>
+              <p class="advantages__item-description">
+                Our plans aren't full of conditions and clauses to prevent
+                payouts. We make sure you're covered when you need it.
+              </p>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="how-we-work">
+          <div class="how-we-work__content">
+            <h3 class="how-we-work__title">
+              Find out more<br />about how we work
+            </h3>
+            <a href="#how-we-work-details" class="button button--white"
+              >How we work</a
+            >
+            <img
+              class="how-we-work__bg-pattern"
+              src="./images/bg-pattern-how-we-work-desktop.svg"
+              alt="Background pattern how we work"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__social-media">
         <div class="logo-wrapper">
-          <img
-            src="./images/logo.svg"
-            alt="Insure logo"
-            loading="lazy"
-          />
+          <img src="./images/logo.svg" alt="Insure logo" loading="lazy" />
         </div>
 
         <ul class="social-media__list">
